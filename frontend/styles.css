@@ -1,0 +1,26 @@
+/* Box com fundo escuro */
+#box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Esconde quando tiver a classe .hidden */
+.hidden {
+  display: none;
+}
+
+/* Conteúdo da box */
+#box .content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
