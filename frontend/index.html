@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="autors" content="Felipe Martins dos Santos Silva">
-    <meta name="description" content="home mangá-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="autors" content="Felipe Martins dos Santos Silva" />
+    <meta name="description" content="home mangá-br" />
     <title>Mangá-br</title>
-</head>
+  </head>
 
-<header>
+  <header>
     <section class="logo">
-        <a href="index.html" title="home" id="home">mangá-br</a>
-        <button id="openBtn" title="abrir configurações">---</button>
+      <a href="index.html" title="home" id="home">mangá-br</a>
+      <button id="openBtn" title="abrir configurações">---</button>
 
-        <div id="box" class="hidden">
-            <div class="content">
-                <h2>Minha Box</h2>
-                <p>Conteúdo dentro da box.</p>
-                <button id="closeBtn" title="fechar box">Fechar</button>
-            </div>
+      <div id="box" class="hidden">
+        <div class="content">
+          <h2>configurações</h2>
+          <p>Conteúdo dentro da box.</p>
+          <button id="closeBtn" title="fechar box">Fechar</button>
         </div>
-        <button id="perfil" title="perfil"></button>
+      </div>
+      <button id="perfil" title="perfil"></button>
     </section>
-
-</header>
-<body>
+  </header>
+  <body>
+    <div>
+      <form>
+        <form action="/search" method="GET">
+          <label for="q" class="sr-only">Pesquisar</label>
+          <input
+            id="q"
+            name="q"
+            type="search"
+            placeholder="Pesquisar mangás..."
+          />
+          <button type="submit">🔍</button>
+        </form>
+      </form>
+    </div>
     <section id="navegação">
-    
-        
-    
-    </section>    
-</body>
-
+      <div>
+        <button id="bt-populares" class="bts-filtros" title="populares">
+          populares
+        </button>
+        <button id="bt-novos" class="bts-filtros" title="novos">novos</button>
+        <button id="bt-az" class="bts-filtros" title="a-z">A-Z</button>
+        <button id="bt-mais" class="bts-filtros" title="mais">Mais</button>
+      </div>
+    </section>
+  </body>
 </html>
